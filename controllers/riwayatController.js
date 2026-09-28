@@ -58,6 +58,46 @@ const createRiwayat = async (req, res) => {
   }
 };
 
+const getRiwayatReport = async (req, res) => {
+  const userId = req.user.userId;
+  try {
+    const result = await pool.query(`
+      SELECT
+        r.id,
+        r.anak_id,
+        r.tanggal_pemeriksaan,
+        r.tinggi_badan,
+        r.berat_badan,
+        r.umur_bulan,
+        r.status,
+        r.predicted_class,
+        r.lingkar_kepala,
+        r.catatan,
+        r.created_at,
+        s.nama,
+        s.nomor_identitas,
+        s.jenis_kelamin,
+        s.tanggal_lahir,
+        s.nama_orang_tua,
+        s.alamat,
+        s.no_telepon_orang_tua,
+        s.posyandu
+      FROM riwayat_pemeriksaan r
+      INNER JOIN status_anak s ON s.id = r.anak_id
+      WHERE s.user_id = $1
+      ORDER BY r.tanggal_pemeriksaan DESC, r.id DESC
+    `, [userId]);
+
+    res.json({
+      message: 'Data laporan pemeriksaan berhasil diambil',
+      data: result.rows,
+    });
+  } catch (error) {
+    console.error('Gagal ambil laporan pemeriksaan:', error);
+    res.status(500).json({ message: 'Gagal mengambil data laporan pemeriksaan' });
+  }
+};
+
 const getRiwayatByAnakId = async (req, res) => {
   const { anak_id } = req.params;
   const userId = req.user.userId;
@@ -135,4 +175,4 @@ const deleteRiwayatById = async (req, res) => {
   }
 };
 
-module.exports = { createRiwayat, getRiwayatByAnakId, deleteRiwayatById };
+module.exports = { createRiwayat, getRiwayatReport, getRiwayatByAnakId, deleteRiwayatById };
