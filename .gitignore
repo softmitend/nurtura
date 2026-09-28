@@ -13,3 +13,5 @@ public/images/
 npm-debug.log*
 .DS_Store
 .vscode/
+
+.vercel

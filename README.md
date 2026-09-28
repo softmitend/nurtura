@@ -90,4 +90,4 @@ Request ke `/` ditulis ulang ke `/index.html`, sehingga halaman SPA disajikan da
 
 5. Deploy ulang, lalu periksa endpoint `/api/health`. Respons yang benar adalah JSON dengan `status: "ok"`.
 
-Jangan memasukkan `PORT` di Vercel; platform mengatur port fungsi secara otomatis. File `.env`, dataset training, notebook, dan model `.h5` sudah dikecualikan dari upload deployment.
+Jangan memasukkan `PORT` di Vercel; platform mengatur port fungsi secara otomatis. File `.env`, dataset training, notebook, dan model `.h5` sudah dikecualikan dari upload deployment. File runtime `public/ml-model/model/model.json` dan `group1-shard1of1.bin` harus tetap ikut deployment.

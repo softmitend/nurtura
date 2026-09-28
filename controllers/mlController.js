@@ -1,13 +1,7 @@
-const tf = require('@tensorflow/tfjs');
-const fs = require('fs');
 const pool = require('../config/database');
+let tf = null;
 let model = null;
 let modelPromise = null;
-
-// require.resolve membuat file bobot ikut terlacak ke bundle Vercel Function.
-const MODEL_WEIGHTS_PATH = require.resolve(
-  '../public/ml-model/model/group1-shard1of1.bin'
-);
 
 const GENDER_MAP = {
   'laki-laki': 0,
@@ -29,12 +23,19 @@ const loadModel = async () => {
 
   if (!modelPromise) {
     modelPromise = (async () => {
+      // Muat TensorFlow dan artefak model hanya ketika endpoint prediksi dipakai.
+      // Endpoint lain tetap dapat hidup walaupun model gagal dimuat.
+      tf = require('@tensorflow/tfjs');
+
       if (process.env.ML_MODEL_URL) {
         return tf.loadGraphModel(process.env.ML_MODEL_URL);
       }
 
+      const fs = require('fs');
       const modelJson = require('../public/ml-model/model/model.json');
-      const weightsBuffer = fs.readFileSync(MODEL_WEIGHTS_PATH);
+      const weightsBuffer = fs.readFileSync(
+        require.resolve('../public/ml-model/model/group1-shard1of1.bin')
+      );
       const weightData = weightsBuffer.buffer.slice(
         weightsBuffer.byteOffset,
         weightsBuffer.byteOffset + weightsBuffer.byteLength

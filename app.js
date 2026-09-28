@@ -6,7 +6,7 @@ const { migrate } = require('./migrate');
 
 const app = express();
 const port = process.env.PORT || 5000;
-const isVercel = Boolean(process.env.VERCEL);
+const frontendPublic = path.join(__dirname, 'public');
 
 app.use(cors());
 app.use(express.json());
@@ -26,23 +26,18 @@ app.use('/api/profile', profileRoutes);
 const mlRoutes = require('./routes/mlRoutes');
 app.use('/ml', mlRoutes);
 
-// Vercel menyajikan folder public melalui CDN. Middleware ini tetap dibutuhkan
-// ketika aplikasi dijalankan secara lokal dengan `npm start`.
-if (!isVercel) {
-  app.use('/public', express.static(path.join(__dirname, 'public')));
-}
+// Hasil build Webpack berada di public/. Pada deployment Express, hasil build
+// ini ikut ke bundle fungsi sehingga tetap perlu disajikan oleh Express.
+app.use('/public', express.static(frontendPublic));
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', service: 'NURTURA API' });
 });
 
-if (!isVercel) {
-  const frontendPublic = path.join(__dirname, 'public');
-  app.use(express.static(frontendPublic));
-  app.get(/^(?!\/(api|auth|ml|public)(\/|$)).*/, (req, res) => {
-    res.sendFile(path.join(frontendPublic, 'index.html'));
-  });
-}
+app.use(express.static(frontendPublic));
+app.get(/^(?!\/(api|auth|ml|public)(\/|$)).*/, (req, res) => {
+  res.sendFile(path.join(frontendPublic, 'index.html'));
+});
 
 // Pastikan semua kegagalan API dikembalikan sebagai JSON, bukan halaman HTML Express.
 app.use((err, req, res, next) => {

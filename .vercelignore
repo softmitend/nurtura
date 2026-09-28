@@ -9,6 +9,7 @@ public/favicon.png
 public/favicon.svg
 public/kesehatan.png
 public/images/
-public/ml-model/**
-!public/ml-model/model/
-!public/ml-model/model/**
+public/ml-model/*.h5
+public/ml-model/*.csv
+public/ml-model/*.ipynb
+public/ml-model/Pemeriksaan/
