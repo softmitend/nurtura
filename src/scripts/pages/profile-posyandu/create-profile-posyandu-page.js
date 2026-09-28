@@ -111,7 +111,8 @@ const CreateProfilePage = {
       try {
         await createProfile(token, {
           nama_posyandu: form.posyanduName.value.trim(),
-          alamat: `${form.alamat.value.trim()}, ${form.desa.value.trim()}`,
+          alamat: form.alamat.value.trim(),
+          desa_kelurahan: form.desa.value.trim(),
           foto_url: currentProfileImageUrl || null,
           deskripsi: form.deskripsi.value.trim(),
         });
