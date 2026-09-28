@@ -66,11 +66,33 @@ const loadModel = async () => {
   return modelPromise;
 };
 
+const normalizeDate = (value) => {
+  if (!value) return null;
+
+  if (value instanceof Date) {
+    if (Number.isNaN(value.getTime())) return null;
+    return new Date(value.getFullYear(), value.getMonth(), value.getDate());
+  }
+
+  const raw = String(value).trim();
+  if (!raw) return null;
+
+  const isoDateMatch = raw.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (isoDateMatch) {
+    const [, year, month, day] = isoDateMatch;
+    const parsed = new Date(Number(year), Number(month) - 1, Number(day));
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+  }
+
+  const parsed = new Date(raw);
+  if (Number.isNaN(parsed.getTime())) return null;
+  return new Date(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
+};
+
 const calculateAgeMonths = (birthDateValue, examinationDateValue) => {
-  if (!birthDateValue) return null;
-  const birth = new Date(`${String(birthDateValue).slice(0, 10)}T00:00:00`);
-  const exam = new Date(`${String(examinationDateValue).slice(0, 10)}T00:00:00`);
-  if (Number.isNaN(birth.getTime()) || Number.isNaN(exam.getTime()) || exam < birth) return null;
+  const birth = normalizeDate(birthDateValue);
+  const exam = normalizeDate(examinationDateValue);
+  if (!birth || !exam || exam < birth) return null;
 
   let months = (exam.getFullYear() - birth.getFullYear()) * 12 + exam.getMonth() - birth.getMonth();
   if (exam.getDate() < birth.getDate()) months -= 1;
@@ -110,10 +132,13 @@ const predictData = async (req, res) => {
     }
 
     const child = childResult.rows[0];
-    const ageMonths = calculateAgeMonths(child.tanggal_lahir, tanggal_pemeriksaan) ?? Number(legacyAge);
+    const calculatedAge = calculateAgeMonths(child.tanggal_lahir, tanggal_pemeriksaan);
+    const fallbackAge = legacyAge == null || legacyAge === '' ? null : Number(legacyAge);
+    const ageMonths = calculatedAge ?? fallbackAge;
+
     if (!Number.isFinite(ageMonths) || ageMonths < 0) {
       return res.status(400).json({
-        message: 'Umur anak tidak dapat dihitung. Lengkapi tanggal lahir anak terlebih dahulu.',
+        message: 'Umur anak tidak dapat dihitung. Periksa tanggal lahir dan tanggal pemeriksaan anak.',
       });
     }
 
