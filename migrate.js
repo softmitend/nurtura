@@ -49,6 +49,7 @@ async function migrate({ closePool = true } = {}) {
     // Kolom pengukuran di tabel ini hanya menyimpan snapshot pemeriksaan TERBARU.
     await pool.query(`
       ALTER TABLE status_anak
+      ADD COLUMN IF NOT EXISTS user_id INTEGER,
       ADD COLUMN IF NOT EXISTS nomor_identitas VARCHAR(80),
       ADD COLUMN IF NOT EXISTS nama_orang_tua VARCHAR(255),
       ADD COLUMN IF NOT EXISTS alamat TEXT,
@@ -60,6 +61,35 @@ async function migrate({ closePool = true } = {}) {
       ADD COLUMN IF NOT EXISTS updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
     `);
 
+    await pool.query(`
+      DO $$
+      BEGIN
+        IF NOT EXISTS (
+          SELECT 1
+          FROM pg_constraint
+          WHERE conname = 'status_anak_user_id_fkey'
+            AND conrelid = 'status_anak'::regclass
+        ) THEN
+          ALTER TABLE status_anak
+          ADD CONSTRAINT status_anak_user_id_fkey
+          FOREIGN KEY (user_id) REFERENCES admin(id) ON DELETE CASCADE;
+        END IF;
+      END
+      $$;
+    `);
+
+    const legacyOwnerId = Number(process.env.LEGACY_DATA_OWNER_ID);
+    if (Number.isInteger(legacyOwnerId) && legacyOwnerId > 0) {
+      const owner = await pool.query('SELECT id FROM admin WHERE id = $1', [legacyOwnerId]);
+      if (owner.rowCount === 0) {
+        throw new Error(`LEGACY_DATA_OWNER_ID ${legacyOwnerId} tidak ditemukan.`);
+      }
+      await pool.query(
+        'UPDATE status_anak SET user_id = $1 WHERE user_id IS NULL',
+        [legacyOwnerId]
+      );
+    }
+
     // Instalasi lama memiliki tiga kolom pemeriksaan sebagai NOT NULL.
     // Data anak baru harus dapat dibuat sebelum pemeriksaan pertama dilakukan.
     await pool.query(`
@@ -69,10 +99,17 @@ async function migrate({ closePool = true } = {}) {
       ALTER COLUMN berat_badan DROP NOT NULL;
     `);
 
+    await pool.query('DROP INDEX IF EXISTS idx_status_anak_nomor_identitas_unique;');
     await pool.query(`
-      CREATE UNIQUE INDEX IF NOT EXISTS idx_status_anak_nomor_identitas_unique
-      ON status_anak (nomor_identitas)
-      WHERE nomor_identitas IS NOT NULL AND nomor_identitas <> '';
+      CREATE UNIQUE INDEX IF NOT EXISTS idx_status_anak_user_nomor_identitas_unique
+      ON status_anak (user_id, nomor_identitas)
+      WHERE user_id IS NOT NULL
+        AND nomor_identitas IS NOT NULL
+        AND nomor_identitas <> '';
+    `);
+    await pool.query(`
+      CREATE INDEX IF NOT EXISTS idx_status_anak_user_id
+      ON status_anak (user_id);
     `);
 
     await pool.query(`

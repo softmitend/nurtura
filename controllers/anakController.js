@@ -3,12 +3,14 @@ const pool = require('../config/database');
 const normalizePhone = (value) => String(value || '').trim();
 
 const getAllStatusAnak = async (req, res) => {
+  const userId = req.user.userId;
   try {
     const result = await pool.query(`
       SELECT *
       FROM status_anak
+      WHERE user_id = $1
       ORDER BY nama ASC, created_at DESC
-    `);
+    `, [userId]);
     res.json({ message: 'Data anak berhasil diambil', data: result.rows });
   } catch (error) {
     console.error(error);
@@ -18,8 +20,12 @@ const getAllStatusAnak = async (req, res) => {
 
 const getAnakById = async (req, res) => {
   const { id } = req.params;
+  const userId = req.user.userId;
   try {
-    const result = await pool.query(`SELECT * FROM status_anak WHERE id = $1`, [id]);
+    const result = await pool.query(
+      `SELECT * FROM status_anak WHERE id = $1 AND user_id = $2`,
+      [id, userId]
+    );
     if (result.rows.length === 0) {
       return res.status(404).json({ message: 'Data anak tidak ditemukan' });
     }
@@ -31,6 +37,7 @@ const getAnakById = async (req, res) => {
 };
 
 const createAnak = async (req, res) => {
+  const userId = req.user.userId;
   const {
     nama,
     nomor_identitas,
@@ -52,6 +59,7 @@ const createAnak = async (req, res) => {
   try {
     const result = await pool.query(`
       INSERT INTO status_anak (
+        user_id,
         nama,
         nomor_identitas,
         jenis_kelamin,
@@ -63,9 +71,10 @@ const createAnak = async (req, res) => {
         foto_url,
         updated_at
       )
-      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,CURRENT_TIMESTAMP)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,CURRENT_TIMESTAMP)
       RETURNING *
     `, [
+      userId,
       String(nama).trim(),
       String(nomor_identitas).trim(),
       jenis_kelamin,
@@ -92,6 +101,7 @@ const createAnak = async (req, res) => {
 
 const updateAnakById = async (req, res) => {
   const { id } = req.params;
+  const userId = req.user.userId;
   const {
     nama,
     nomor_identitas,
@@ -121,7 +131,7 @@ const updateAnakById = async (req, res) => {
           posyandu = $8,
           foto_url = $9,
           updated_at = CURRENT_TIMESTAMP
-      WHERE id = $10
+      WHERE id = $10 AND user_id = $11
       RETURNING *
     `, [
       String(nama).trim(),
@@ -134,6 +144,7 @@ const updateAnakById = async (req, res) => {
       posyandu ? String(posyandu).trim() : null,
       foto_url || null,
       id,
+      userId,
     ]);
 
     if (result.rowCount === 0) {
@@ -152,8 +163,12 @@ const updateAnakById = async (req, res) => {
 
 const deleteAnakById = async (req, res) => {
   const { id } = req.params;
+  const userId = req.user.userId;
   try {
-    const result = await pool.query(`DELETE FROM status_anak WHERE id = $1`, [id]);
+    const result = await pool.query(
+      `DELETE FROM status_anak WHERE id = $1 AND user_id = $2`,
+      [id, userId]
+    );
     if (result.rowCount === 0) {
       return res.status(404).json({ message: 'Data anak tidak ditemukan' });
     }

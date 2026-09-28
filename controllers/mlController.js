@@ -78,6 +78,7 @@ const calculateAgeMonths = (birthDateValue, examinationDateValue) => {
 };
 
 const predictData = async (req, res) => {
+  const userId = req.user.userId;
   const input = Array.isArray(req.body) ? req.body[0] : req.body;
   const {
     anak_id,
@@ -100,7 +101,10 @@ const predictData = async (req, res) => {
   let client;
 
   try {
-    const childResult = await pool.query('SELECT * FROM status_anak WHERE id = $1', [anak_id]);
+    const childResult = await pool.query(
+      'SELECT * FROM status_anak WHERE id = $1 AND user_id = $2',
+      [anak_id, userId]
+    );
     if (!childResult.rows.length) {
       return res.status(404).json({ message: 'Data anak tidak ditemukan.' });
     }
@@ -169,8 +173,8 @@ const predictData = async (req, res) => {
           label = $5,
           last_checkup_at = $6,
           updated_at = CURRENT_TIMESTAMP
-      WHERE id = $7
-    `, [ageMonths, height, weight, predictedClass, predictedLabel, tanggal_pemeriksaan, anak_id]);
+      WHERE id = $7 AND user_id = $8
+    `, [ageMonths, height, weight, predictedClass, predictedLabel, tanggal_pemeriksaan, anak_id, userId]);
 
     await client.query('COMMIT');
 

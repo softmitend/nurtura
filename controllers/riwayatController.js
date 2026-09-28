@@ -1,6 +1,7 @@
 const pool = require('../config/database');
 
 const createRiwayat = async (req, res) => {
+  const userId = req.user.userId;
   const {
     anak_id,
     tanggal_pemeriksaan,
@@ -21,6 +22,15 @@ const createRiwayat = async (req, res) => {
   try {
     client = await pool.connect();
     await client.query('BEGIN');
+    const ownedChild = await client.query(
+      `SELECT id FROM status_anak WHERE id = $1 AND user_id = $2 FOR UPDATE`,
+      [anak_id, userId]
+    );
+    if (ownedChild.rowCount === 0) {
+      await client.query('ROLLBACK');
+      return res.status(404).json({ message: 'Data anak tidak ditemukan' });
+    }
+
     const result = await client.query(`
       INSERT INTO riwayat_pemeriksaan
       (anak_id, tanggal_pemeriksaan, tinggi_badan, berat_badan, umur_bulan, status, predicted_class, lingkar_kepala, catatan)
@@ -32,8 +42,8 @@ const createRiwayat = async (req, res) => {
       UPDATE status_anak
       SET umur_bulan=$1, tinggi_badan=$2, berat_badan=$3, label=$4, predicted_class=$5,
           last_checkup_at=$6, updated_at=CURRENT_TIMESTAMP
-      WHERE id=$7
-    `, [umur_bulan, tinggi_badan, berat_badan, status, predicted_class ?? null, tanggal_pemeriksaan, anak_id]);
+      WHERE id=$7 AND user_id=$8
+    `, [umur_bulan, tinggi_badan, berat_badan, status, predicted_class ?? null, tanggal_pemeriksaan, anak_id, userId]);
 
     await client.query('COMMIT');
     res.status(201).json({ message: 'Riwayat pemeriksaan berhasil ditambahkan', data: result.rows[0] });
@@ -50,10 +60,15 @@ const createRiwayat = async (req, res) => {
 
 const getRiwayatByAnakId = async (req, res) => {
   const { anak_id } = req.params;
+  const userId = req.user.userId;
   try {
     const result = await pool.query(
-      `SELECT * FROM riwayat_pemeriksaan WHERE anak_id = $1 ORDER BY tanggal_pemeriksaan DESC, id DESC`,
-      [anak_id]
+      `SELECT r.*
+       FROM riwayat_pemeriksaan r
+       INNER JOIN status_anak s ON s.id = r.anak_id
+       WHERE r.anak_id = $1 AND s.user_id = $2
+       ORDER BY r.tanggal_pemeriksaan DESC, r.id DESC`,
+      [anak_id, userId]
     );
     res.json({ message: 'Riwayat pemeriksaan berhasil diambil', data: result.rows });
   } catch (error) {
@@ -64,11 +79,19 @@ const getRiwayatByAnakId = async (req, res) => {
 
 const deleteRiwayatById = async (req, res) => {
   const { id } = req.params;
+  const userId = req.user.userId;
   let client;
   try {
     client = await pool.connect();
     await client.query('BEGIN');
-    const deleted = await client.query(`DELETE FROM riwayat_pemeriksaan WHERE id = $1 RETURNING anak_id`, [id]);
+    const deleted = await client.query(`
+      DELETE FROM riwayat_pemeriksaan r
+      USING status_anak s
+      WHERE r.id = $1
+        AND r.anak_id = s.id
+        AND s.user_id = $2
+      RETURNING r.anak_id
+    `, [id, userId]);
     if (deleted.rowCount === 0) {
       await client.query('ROLLBACK');
       return res.status(404).json({ message: 'Riwayat tidak ditemukan' });
@@ -88,15 +111,15 @@ const deleteRiwayatById = async (req, res) => {
         UPDATE status_anak
         SET umur_bulan=$1, tinggi_badan=$2, berat_badan=$3, label=$4, predicted_class=$5,
             last_checkup_at=$6, updated_at=CURRENT_TIMESTAMP
-        WHERE id=$7
-      `, [item.umur_bulan, item.tinggi_badan, item.berat_badan, item.status, item.predicted_class, item.tanggal_pemeriksaan, anakId]);
+        WHERE id=$7 AND user_id=$8
+      `, [item.umur_bulan, item.tinggi_badan, item.berat_badan, item.status, item.predicted_class, item.tanggal_pemeriksaan, anakId, userId]);
     } else {
       await client.query(`
         UPDATE status_anak
         SET umur_bulan=NULL, tinggi_badan=NULL, berat_badan=NULL, label=NULL, predicted_class=NULL,
             last_checkup_at=NULL, updated_at=CURRENT_TIMESTAMP
-        WHERE id=$1
-      `, [anakId]);
+        WHERE id=$1 AND user_id=$2
+      `, [anakId, userId]);
     }
 
     await client.query('COMMIT');

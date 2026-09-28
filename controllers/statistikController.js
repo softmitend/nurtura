@@ -1,6 +1,7 @@
 const pool = require('../config/database');
 
 const getStatistik = async (req, res) => {
+  const userId = req.user.userId;
   try {
     const result = await pool.query(`
       SELECT
@@ -8,10 +9,12 @@ const getStatistik = async (req, res) => {
         label,
         COUNT(*) AS jumlah
       FROM status_anak
-      WHERE last_checkup_at IS NOT NULL AND label IS NOT NULL
+      WHERE user_id = $1
+        AND last_checkup_at IS NOT NULL
+        AND label IS NOT NULL
       GROUP BY tahun, label
       ORDER BY tahun ASC
-    `);
+    `, [userId]);
 
     const statistik = {};
     result.rows.forEach((row) => {
