@@ -70,6 +70,7 @@ Model yang dipakai runtime berada di `public/ml-model/model/` dan dibaca langsun
 ## Deploy ke Vercel
 
 Project menggunakan runtime Node.js 24 dan terdeteksi sebagai aplikasi Express. Build frontend dijalankan otomatis melalui konfigurasi `vercel.json`.
+Request ke `/` ditulis ulang ke `/index.html`, sehingga halaman SPA disajikan dari CDN dan tidak jatuh ke respons `Cannot GET /` milik Express.
 
 1. Push project ke GitHub, GitLab, atau Bitbucket, lalu import repository tersebut di Vercel. Alternatifnya, jalankan `vercel` dari root project.
 2. Gunakan root directory project ini dan Framework Preset **Express**. Build Command sudah diatur ke `npm run build`; Output Directory tidak perlu diisi.
