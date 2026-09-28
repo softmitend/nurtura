@@ -6,7 +6,10 @@ const getProfile = async (req, res) => {
     const userId = req.user.userId;
 
     const result = await pool.query(
-      'SELECT * FROM posyandu_profile WHERE user_id = $1',
+      `SELECT p.*, a.username
+       FROM posyandu_profile p
+       INNER JOIN admin a ON a.id = p.user_id
+       WHERE p.user_id = $1`,
       [userId]
     );
 
@@ -31,9 +34,8 @@ const getProfile = async (req, res) => {
 const createProfile = async (req, res) => {
   try {
     const userId = req.user.userId;
-    const { nama_posyandu, alamat, foto_url, deskripsi } = req.body;
+    const { nama_posyandu, alamat, desa_kelurahan, foto_url, deskripsi } = req.body;
 
-    // Cek apakah sudah ada profil
     const existing = await pool.query(
       'SELECT * FROM posyandu_profile WHERE user_id = $1',
       [userId]
@@ -42,11 +44,10 @@ const createProfile = async (req, res) => {
       return res.status(400).json({ message: 'Profil sudah ada, gunakan PUT untuk update' });
     }
 
-    // Simpan profil baru
     await pool.query(
-      `INSERT INTO posyandu_profile (user_id, nama_posyandu, alamat, foto_url, deskripsi)
-       VALUES ($1, $2, $3, $4, $5)`,
-      [userId, nama_posyandu, alamat, foto_url, deskripsi]
+      `INSERT INTO posyandu_profile (user_id, nama_posyandu, alamat, desa_kelurahan, foto_url, deskripsi)
+       VALUES ($1, $2, $3, $4, $5, $6)`,
+      [userId, nama_posyandu, alamat, desa_kelurahan || null, foto_url, deskripsi]
     );
 
     res.status(201).json({ message: '✅ Profil berhasil dibuat' });
@@ -60,13 +61,17 @@ const createProfile = async (req, res) => {
 const updateProfile = async (req, res) => {
   try {
     const userId = req.user.userId;
-    const { nama_posyandu, alamat, foto_url, deskripsi } = req.body;
+    const { nama_posyandu, alamat, desa_kelurahan, foto_url, deskripsi } = req.body;
 
     await pool.query(
       `UPDATE posyandu_profile
-       SET nama_posyandu = $1, alamat = $2, foto_url = $3, deskripsi = $4
-       WHERE user_id = $5`,
-      [nama_posyandu, alamat, foto_url, deskripsi, userId]
+       SET nama_posyandu = $1,
+           alamat = $2,
+           desa_kelurahan = $3,
+           foto_url = $4,
+           deskripsi = $5
+       WHERE user_id = $6`,
+      [nama_posyandu, alamat, desa_kelurahan || null, foto_url, deskripsi, userId]
     );
 
     res.json({ message: '✅ Profil berhasil diperbarui' });
