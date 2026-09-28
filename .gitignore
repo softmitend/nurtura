@@ -1,0 +1,15 @@
+node_modules/
+dist/
+public/app.bundle.js
+public/app.css
+public/index.html
+public/favicon.png
+public/favicon.svg
+public/kesehatan.png
+public/images/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
+.vscode/

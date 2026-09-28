@@ -1,0 +1,2 @@
+/* Final NURTURA compatibility layer. Core styling lives in page-specific styles and styles.css. */
+html,body{background:var(--canvas)!important;color:var(--ink)!important}body{font-family:Inter,"Segoe UI",Arial,sans-serif!important}.main-content,.legacy-dashboard-layout,.main-content-anak{background:var(--canvas)!important}.hidden{display:none!important}.btn-primary,.btn-tambah,.btn-tambah-data{font-family:inherit}

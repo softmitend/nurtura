@@ -1,0 +1,832 @@
+No_Induk,Name,DOB,Gender,Age,Weight,Height,Checkup_date,Stunting_Status
+1,Muhammad Habibie,22/09/2019,Laki-laki,35,10.3,81.0,2022-02-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,16,10.0,75.0,2022-02-01,Normal
+3,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,9,9.0,76.0,2022-02-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,34,12.5,96.0,2022-02-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,26,10.4,88.0,2022-02-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,39,21.1,91.0,2022-02-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,30,11.9,90.0,2022-02-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,6,6.9,65.0,2022-02-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,33,12.5,93.0,2022-02-01,Normal
+10,Angel Almaira,12/06/2019,Perempuan,32,10.7,79.0,2022-02-01,Stunting
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,17,9.9,78.0,,Normal
+3,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,10,9.8,72.0,,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,7,6.9,64.0,2022-03-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,31,11.7,88.0,2022-03-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,34,12.7,93.0,2022-03-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,35,12.7,95.0,2022-03-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,40,12.3,95.0,2022-03-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,17,8.9,80.0,2022-03-01,Normal
+12,Kayla Asya Agustina,01/08/2018,Perempuan,43,16.3,102.0,2022-03-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,3,4.8,53.0,2022-03-01,Stunting
+14,Anisa Ramadani,06/06/2020,Perempuan,22,9.4,83.0,2022-03-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,48,12.8,93.0,2022-03-01,Stunting
+17,Zyfana Ganish,20/03/2020,Perempuan,24,10.0,80.0,2022-03-01,Stunting
+10,Angel Almaira,12/06/2019,Perempuan,33,11.0,83.0,2022-03-01,Berpotensi Stunting
+1,Muhammad Habibie,22/09/2019,Laki-laki,36,10.6,83.0,2022-03-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,27,10.6,89.0,2022-03-01,Normal
+12,Kayla Asya Agustina,01/08/2018,Perempuan,44,17.1,102.0,2022-04-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,18,10.2,78.0,2022-04-01,Normal
+3,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,11,8.0,70.0,2022-04-01,Berpotensi Stunting
+8,Dea Fiedella,29/08/2021,Perempuan,8,8.0,70.0,2022-04-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,4,5.4,57.0,2022-04-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,18,9.5,79.0,2022-04-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,49,12.6,94.0,2022-04-01,Berpotensi Stunting
+1,Muhammad Habibie,22/09/2019,Laki-laki,37,10.9,86.0,2022-04-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,41,13.0,95.0,2022-04-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,36,12.7,99.0,2022-04-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,35,12.7,93.0,2022-04-01,Normal
+10,Angel Almaira,12/06/2019,Perempuan,34,11.3,86.0,2022-04-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,32,12.1,89.0,2022-04-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,23,9.8,83.0,2022-04-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,26,12.2,84.0,2022-04-01,Normal
+17,Zyfana Ganish,20/03/2020,Perempuan,25,10.2,81.0,2022-04-01,Stunting
+18,Atha Rayhan Shakiel,05/10/2020,Laki-laki,26,10.0,75.0,2022-04-01,Stunting
+19,Zia Ayna Putri Azkeyla,18/11/2020,Perempuan,18,7.4,71.0,2022-04-01,Stunting
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,35,12.7,93.0,2022-04-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,28,10.8,90.0,2022-04-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,50,12.7,96.0,2022-05-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,42,13.2,95.0,2022-05-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,37,14.9,99.0,2022-05-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,36,14.9,94.0,2022-05-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,38,11.0,88.0,2022-05-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,33,12.3,92.0,2022-05-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,27,12.3,86.0,2022-05-01,Normal
+17,Zyfana Ganish,20/03/2020,Perempuan,26,9.7,81.0,2022-05-01,Stunting
+14,Anisa Ramadani,06/06/2020,Perempuan,24,10.0,84.0,2022-05-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,19,10.5,78.0,2022-05-01,Normal
+3,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,12,8.0,72.0,2022-05-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,5,5.2,61.0,2022-05-01,Normal
+12,Kayla Asya Agustina,01/08/2018,Perempuan,45,17.8,103.0,2022-05-01,Normal
+10,Angel Almaira,12/06/2019,Perempuan,35,11.4,87.0,2022-05-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,29,11.0,91.0,2022-05-01,Normal
+18,Atha Rayhan Shakiel,05/10/2020,Laki-laki,27,10.0,77.0,2022-05-01,Stunting
+8,Dea Fiedella,29/08/2021,Perempuan,9,8.0,70.0,2022-05-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,51,12.7,96.0,2022-06-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,43,13.3,96.0,2022-06-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,38,14.0,98.0,2022-06-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,37,13.4,97.0,2022-06-01,Normal
+10,Angel Almaira,12/06/2019,Perempuan,36,11.5,89.0,2022-06-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,39,10.9,89.0,2022-06-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,34,12.3,91.0,2022-06-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,30,11.2,91.0,2022-06-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,28,12.4,87.0,2022-06-01,Normal
+17,Zyfana Ganish,20/03/2020,Perempuan,27,9.6,83.0,2022-06-01,Berpotensi Stunting
+14,Anisa Ramadani,06/06/2020,Perempuan,25,10.1,85.0,2022-06-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,20,10.7,78.0,2022-06-01,Normal
+18,Atha Rayhan Shakiel,05/10/2020,Laki-laki,28,9.8,80.0,2022-06-01,Berpotensi Stunting
+8,Dea Fiedella,29/08/2021,Perempuan,10,8.0,71.0,2022-06-01,Stunting
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,6,5.4,61.0,2022-06-01,Normal
+12,Kayla Asya Agustina,01/08/2018,Perempuan,46,19.3,102.0,2022-06-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,52,12.7,96.0,2022-07-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,44,14.1,97.0,2022-07-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,39,13.8,100.0,2022-07-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,38,13.8,97.0,2022-07-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,40,11.0,89.0,2022-07-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,35,13.0,91.0,2022-07-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,31,11.4,92.0,2022-07-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,29,12.5,89.0,2022-07-01,Normal
+17,Zyfana Ganish,20/03/2020,Perempuan,28,10.0,83.0,2022-07-01,Berpotensi Stunting
+14,Anisa Ramadani,06/06/2020,Perempuan,26,10.7,87.0,2022-07-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,21,10.4,80.0,2022-07-01,Normal
+18,Atha Rayhan Shakiel,05/10/2020,Laki-laki,29,9.6,82.0,2022-07-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,14,10.2,84.0,2022-07-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,11,8.0,72.0,2022-07-01,Stunting
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,7,5.7,62.0,2022-07-01,Normal
+12,Kayla Asya Agustina,01/08/2018,Perempuan,47,19.2,104.0,2022-07-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,53,12.3,94.0,2022-08-01,Berpotensi Stunting
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,45,13.2,98.0,2022-08-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,40,13.6,98.0,2022-08-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,39,14.2,99.0,2022-08-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,41,11.2,89.0,2022-08-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,36,13.2,92.0,2022-08-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,32,12.3,92.0,2022-08-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,30,12.6,90.0,2022-08-01,Normal
+17,Zyfana Ganish,20/03/2020,Perempuan,29,10.0,84.0,2022-08-01,Berpotensi Stunting
+14,Anisa Ramadani,06/06/2020,Perempuan,27,10.2,87.0,2022-08-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,22,10.6,82.0,2022-08-01,Normal
+18,Atha Rayhan Shakiel,05/10/2020,Laki-laki,30,9.5,84.0,2022-08-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,15,10.1,82.0,2022-08-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,12,8.3,72.0,2022-08-01,Stunting
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,8,6.0,63.0,2022-08-01,Normal
+12,Kayla Asya Agustina,01/08/2018,Perempuan,48,19.1,106.0,2022-08-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,2,4.7,53.0,2022-08-01,Stunting
+21,Michelle Arsyila Fakhrana,26/10/2021,Perempuan,10,9.8,73.0,2022-08-01,Normal
+22,Ratu Bilqis Salsabila,06/10/2020,Perempuan,22,8.7,77.0,2022-08-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,54,13.2,97.0,2022-09-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,46,12.7,100.0,2022-09-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,41,13.9,100.0,2022-09-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,40,14.0,99.0,2022-09-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,42,11.2,90.0,2022-09-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,37,12.8,92.0,2022-09-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,50,11.9,93.5,2022-09-01,Stunting
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,31,12.5,91.0,2022-09-01,Normal
+17,Zyfana Ganish,20/03/2020,Perempuan,30,10.6,84.0,2022-09-01,Berpotensi Stunting
+14,Anisa Ramadani,06/06/2020,Perempuan,28,10.1,87.0,2022-09-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,23,10.0,85.0,2022-09-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,23,10.5,82.0,2022-09-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,16,10.4,82.0,2022-09-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,13,8.6,74.0,2022-09-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,9,6.5,65.0,2022-09-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,3,5.4,58.0,2022-09-01,Normal
+23,Lian Aji Saka,20/08/2022,Laki-laki,1,5.6,59.0,2022-09-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,4,6.8,63.0,2022-09-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,55,13.3,97.0,2022-10-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,47,13.7,100.0,2022-10-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,42,14.0,102.0,2022-10-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,41,13.8,99.0,2022-10-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,38,13.0,94.0,2022-10-01,Normal
+5,Muhammad Ihsan Fahmi,06/12/2019,Laki-laki,51,11.5,95.0,2022-10-01,Berpotensi Stunting
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,32,13.5,91.0,2022-10-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,29,10.2,88.0,2022-10-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,24,10.2,85.0,2022-10-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,24,10.9,82.0,2022-10-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,17,11.1,82.0,2022-10-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,14,8.9,78.0,2022-10-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,10,6.8,68.0,2022-10-01,Stunting
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,4,5.9,62.0,2022-10-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,2,6.6,63.0,2022-10-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,5,7.0,61.0,2022-10-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,12,9.1,69.0,2022-10-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,56,13.4,97.0,2022-11-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,48,13.5,100.0,2022-11-01,Normal
+4,Trikas Wahyudi,20/03/2019,Laki-laki,43,14.2,104.0,2022-11-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,42,13.3,101.0,2022-11-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,39,13.1,96.0,2022-11-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,33,13.1,91.0,2022-11-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,30,10.2,88.0,2022-11-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,25,10.0,86.0,2022-11-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,25,10.9,82.0,2022-11-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,18,11.3,86.0,2022-11-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,15,9.3,82.0,2022-11-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,11,6.8,68.0,2022-11-01,Stunting
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,5,6.1,63.0,2022-11-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,3,7.5,64.0,2022-11-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,6,7.3,61.0,2022-11-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,13,9.2,73.0,2022-11-01,Stunting
+26,Reikhan Dzaki Fahreza,11/03/2022,Laki-laki,8,8.5,71.0,2022-11-01,Berpotensi Stunting
+27,Marceline Angelina Monica,23/03/2019,Perempuan,44,10.2,89.0,2022-11-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,57,13.2,98.0,2022-12-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,49,14.6,100.0,2022-12-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,43,14.4,101.0,2022-12-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,40,14.0,98.0,2022-12-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,34,13.5,93.0,2022-12-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,31,10.6,89.0,2022-12-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,26,11.3,86.0,2022-12-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,26,11.6,83.0,2022-12-01,Normal
+18,Atha Rayhan Shakiel,05/10/2020,Laki-laki,34,9.9,85.0,2022-12-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,19,11.7,86.0,2022-12-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,16,9.3,82.0,2022-12-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,12,7.0,71.0,2022-12-01,Stunting
+26,Reikhan Dzaki Fahreza,11/03/2022,Laki-laki,9,8.5,71.0,2022-12-01,Berpotensi Stunting
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,6,6.4,64.0,2022-12-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,4,7.5,64.0,2022-12-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,7,7.5,62.0,2022-12-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,14,9.2,75.0,2022-12-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,45,10.4,90.5,2022-12-01,Stunting
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,11,8.8,68.0,2022-12-01,Stunting
+29,Danendra Kenzo Arkananta Hermawan,16/03/2021,Laki-laki,21,11.0,83.0,2022-12-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,58,12.7,98.0,2023-01-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,50,13.6,100.0,2023-01-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,44,13.9,100.0,2023-01-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,41,13.8,98.0,2023-01-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,35,13.9,94.0,2023-01-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,32,10.7,90.0,2023-01-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,27,11.2,87.5,2023-01-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,27,11.0,83.0,2023-01-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,20,11.4,86.0,2023-01-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,17,9.4,82.0,2023-01-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,13,6.9,72.0,2023-01-01,Stunting
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,12,9.2,70.0,2023-01-01,Berpotensi Stunting
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,7,6.6,65.0,2023-01-01,Stunting
+21,Lian Aji Saka,20/08/2022,Laki-laki,5,7.9,67.0,2023-01-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,8,7.2,68.0,2023-01-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,15,9.1,90.5,2023-01-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,46,10.4,90.5,2023-01-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,59,13.1,98.0,2023-02-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,51,14.0,100.0,2023-02-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,45,14.4,101.0,2023-02-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,42,14.2,99.0,2023-02-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,36,13.7,95.0,2023-02-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,33,10.9,91.0,2023-02-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,28,11.3,90.0,2023-02-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,28,11.5,85.0,2023-02-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,21,11.5,90.0,2023-02-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,18,9.8,83.0,2023-02-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,14,7.2,73.0,2023-02-01,Stunting
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,13,9.6,72.0,2023-02-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,8,7.3,69.0,2023-02-01,Berpotensi Stunting
+21,Lian Aji Saka,20/08/2022,Laki-laki,6,8.3,67.0,2023-02-01,Berpotensi Stunting
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,9,7.4,69.0,2023-02-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,16,9.1,78.0,2023-02-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,47,10.7,92.0,2023-02-01,Stunting
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,52,16.8,110.0,2023-02-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,60,13.2,98.0,2023-03-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,52,14.1,100.0,2023-03-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,46,14.1,103.0,2023-03-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,43,14.8,100.0,2023-03-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,37,14.4,95.0,2023-03-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,34,11.4,90.0,2023-03-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,29,11.5,92.0,2023-03-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,29,11.2,85.0,2023-03-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,22,11.7,90.0,2023-03-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,19,10.0,83.0,2023-03-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,9,8.1,69.0,2023-03-01,Berpotensi Stunting
+21,Lian Aji Saka,20/08/2022,Laki-laki,7,8.4,69.0,2023-03-01,Berpotensi Stunting
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,10,7.7,69.0,2023-03-01,Stunting
+25,Narumi Nariswari P,15/10/2021,Perempuan,17,9.5,78.0,2023-03-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,48,11.5,92.0,2023-03-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,1,3.1,49.0,2023-03-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,61,13.1,98.0,2023-04-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,47,14.0,103.0,2023-04-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,44,15.2,100.0,2023-04-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,38,14.9,96.0,2023-04-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,30,11.2,85.0,2023-04-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,23,11.8,90.0,2023-04-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,20,9.9,83.0,2023-04-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,10,8.1,69.0,2023-04-01,Berpotensi Stunting
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,52,14.1,100.3,2023-05-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,15,7.3,73.7,2023-05-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,14,9.7,72.5,2023-05-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,53,16.9,110.5,2023-05-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,53,14.3,100.3,2023-05-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,35,11.5,90.7,2023-05-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,30,11.7,92.5,2023-05-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,8,8.8,70.3,2023-05-01,Berpotensi Stunting
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,11,8.1,70.5,2023-05-01,Stunting
+25,Narumi Nariswari P,15/10/2021,Perempuan,18,9.7,78.8,2023-05-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,49,11.6,92.3,2023-05-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,2,3.5,50.8,2023-05-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,62,13.2,98.2,2023-05-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,48,14.1,103.4,2023-05-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,45,15.3,100.5,2023-05-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,39,15.0,96.4,2023-05-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,31,11.5,85.9,2023-05-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,24,11.9,91.0,2023-05-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,21,10.1,84.0,2023-05-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,11,8.6,70.6,2023-05-01,Berpotensi Stunting
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,53,14.2,100.5,2023-06-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,16,7.6,74.2,2023-06-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,15,10.0,73.4,2023-06-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,54,17.0,110.8,2023-06-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,54,14.4,100.5,2023-06-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,36,11.6,91.5,2023-06-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,31,11.8,93.0,2023-06-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,9,9.3,71.8,2023-06-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,12,8.4,71.7,2023-06-01,Stunting
+25,Narumi Nariswari P,15/10/2021,Perempuan,19,9.9,79.7,2023-06-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,50,11.7,92.7,2023-06-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,3,4.0,52.7,2023-06-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,63,13.4,98.6,2023-06-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,49,14.3,103.9,2023-06-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,46,15.4,100.8,2023-06-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,40,15.1,96.8,2023-06-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,32,11.6,86.7,2023-06-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,25,12.2,91.9,2023-06-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,22,10.3,84.7,2023-06-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,12,8.9,72.2,2023-06-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,54,14.4,101.0,2023-07-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,17,7.9,74.9,2023-07-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,16,10.3,74.0,2023-07-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,55,17.1,111.0,2023-07-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,55,14.5,100.9,2023-07-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,37,11.7,91.8,2023-07-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,32,12.0,93.6,2023-07-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,10,9.7,73.4,2023-07-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,13,8.5,72.4,2023-07-01,Stunting
+25,Narumi Nariswari P,15/10/2021,Perempuan,20,10.2,80.4,2023-07-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,51,11.9,93.2,2023-07-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,4,4.4,54.2,2023-07-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,64,13.6,98.9,2023-07-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,50,14.4,104.1,2023-07-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,47,15.5,101.2,2023-07-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,41,15.2,97.1,2023-07-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,33,11.9,87.2,2023-07-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,26,12.4,92.4,2023-07-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,23,10.4,85.7,2023-07-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,13,9.2,73.1,2023-07-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,55,14.5,101.5,2023-08-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,18,8.0,75.6,2023-08-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,17,10.6,74.5,2023-08-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,56,17.2,111.2,2023-08-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,56,14.6,101.2,2023-08-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,38,11.8,92.1,2023-08-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,33,12.1,94.5,2023-08-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,11,9.9,75.1,2023-08-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,14,8.7,73.3,2023-08-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,21,10.3,81.4,2023-08-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,52,12.1,93.6,2023-08-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,5,4.7,55.3,2023-08-01,Stunting
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,65,13.7,99.3,2023-08-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,51,14.5,104.4,2023-08-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,48,15.6,101.6,2023-08-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,42,15.3,97.5,2023-08-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,34,12.1,88.1,2023-08-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,27,12.7,92.9,2023-08-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,24,10.6,86.7,2023-08-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,14,9.4,73.7,2023-08-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,56,14.6,101.7,2023-09-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,19,8.3,76.2,2023-09-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,18,10.8,75.3,2023-09-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,57,17.4,111.5,2023-09-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,57,14.7,101.5,2023-09-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,39,11.9,92.6,2023-09-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,34,12.4,95.1,2023-09-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,12,10.3,77.0,2023-09-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,15,8.9,74.1,2023-09-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,22,10.4,82.2,2023-09-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,53,12.2,94.0,2023-09-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,6,5.0,57.3,2023-09-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,66,13.8,99.7,2023-09-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,52,14.7,104.6,2023-09-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,49,15.7,102.1,2023-09-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,43,15.5,97.8,2023-09-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,35,12.3,88.6,2023-09-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,28,13.0,93.7,2023-09-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,25,10.8,87.5,2023-09-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,15,9.5,74.7,2023-09-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,57,14.7,101.9,2023-10-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,20,8.5,76.8,2023-10-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,19,11.0,75.8,2023-10-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,58,17.6,111.7,2023-10-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,58,14.8,101.8,2023-10-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,40,12.0,93.1,2023-10-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,35,12.7,95.9,2023-10-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,13,10.5,77.5,2023-10-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,16,9.1,75.0,2023-10-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,23,10.6,82.9,2023-10-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,54,12.3,94.3,2023-10-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,7,5.3,58.3,2023-10-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,67,13.9,100.0,2023-10-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,53,14.9,104.9,2023-10-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,50,15.8,102.5,2023-10-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,44,15.7,98.0,2023-10-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,36,12.4,89.6,2023-10-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,29,13.2,94.4,2023-10-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,26,11.0,88.5,2023-10-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,16,9.8,75.2,2023-10-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,58,14.8,102.3,2023-11-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,21,8.6,77.4,2023-11-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,20,11.3,76.3,2023-11-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,59,17.7,112.2,2023-11-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,59,14.9,102.2,2023-11-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,41,12.1,93.6,2023-11-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,36,12.9,96.8,2023-11-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,14,10.7,78.1,2023-11-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,17,9.2,76.0,2023-11-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,24,10.8,83.4,2023-11-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,55,12.4,94.6,2023-11-01,Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,8,5.5,60.0,2023-11-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,68,14.0,100.4,2023-11-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,54,15.1,105.2,2023-11-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,51,16.0,102.9,2023-11-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,45,15.8,98.5,2023-11-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,37,12.5,89.9,2023-11-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,30,13.4,95.0,2023-11-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,27,11.2,89.5,2023-11-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,17,10.0,76.0,2023-11-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,59,15.0,102.7,2023-12-01,Normal
+13,Nadia Khoirun Nisa,11/12/2021,Perempuan,22,8.9,78.0,2023-12-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,21,11.4,76.9,2023-12-01,Normal
+30,Aurora Aulia Arsy,03/10/2018,Perempuan,60,17.9,112.7,2023-12-01,Normal
+6,Azqila Mauza Andinitya,24/10/2018,Perempuan,60,15.1,102.5,2023-12-01,Normal
+14,Anisa Ramadani,06/06/2020,Perempuan,42,12.3,93.9,2023-12-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,37,13.0,97.1,2023-12-01,Normal
+21,Lian Aji Saka,20/08/2022,Laki-laki,15,11.0,78.7,2023-12-01,Normal
+24,Shafira Salsabila Hussaini,05/05/2022,Perempuan,18,9.4,76.8,2023-12-01,Normal
+25,Narumi Nariswari P,15/10/2021,Perempuan,25,11.0,84.3,2023-12-01,Normal
+27,Marceline Angelina Monica,23/03/2019,Perempuan,56,12.6,94.8,2023-12-01,Berpotensi Stunting
+31,Radya Almira Azzahra,06/03/2023,Perempuan,9,5.9,61.6,2023-12-01,Normal
+15,Bahrul Ahmad Al Ghozali,31/03/2018,Laki-laki,69,14.2,100.9,2023-12-01,Normal
+9,Alby Yafie Naditik,06/04/2019,Laki-laki,55,15.2,105.5,2023-12-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,52,16.2,103.2,2023-12-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,46,15.9,99.0,2023-12-01,Normal
+2,Kevin Adhitama Al/Ghifary,30/10/2020,Laki-laki,38,12.7,90.1,2023-12-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,31,13.6,95.6,2023-12-01,Normal
+8,Dea Fiedella,29/08/2021,Perempuan,28,11.3,90.3,2023-12-01,Normal
+20,Muhammad Fata Alvaro,29/06/2022,Laki-laki,18,10.1,76.6,2023-12-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,53,15.5,101.0,2024-01-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,47,16.5,102.0,2024-01-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,39,13.1,95.0,2024-01-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,58,12.8,99.0,2024-01-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,32,13.0,94.0,2024-01-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,38,11.6,92.0,2024-01-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,8,7.5,70.0,2024-01-01,Berpotensi Stunting
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,24,13.9,85.0,2024-02-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,27,10.4,85.0,2024-02-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,40,12.6,92.6,2024-02-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,27,10.8,86.0,2024-02-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,49,17.7,105.0,2024-02-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,4,9.5,76.5,2024-02-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,30,11.8,91.0,2024-02-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,9,9.0,69.0,2024-02-01,Berpotensi Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,54,15.7,101.4,2024-02-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,48,16.6,102.2,2024-02-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,40,13.2,95.4,2024-02-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,59,13.0,99.3,2024-02-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,33,13.1,95.0,2024-02-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,39,11.7,92.5,2024-02-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,9,7.7,71.7,2024-02-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,25,14.1,85.7,2024-02-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,28,10.5,86.0,2024-02-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,41,12.7,92.8,2024-02-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,28,11.0,86.7,2024-02-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,50,17.9,105.4,2024-02-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,5,9.8,78.2,2024-02-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,31,12.1,91.7,2024-02-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,10,9.3,70.1,2024-02-01,Berpotensi Stunting
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,9,7.4,73.5,2024-02-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,7,8.2,66.6,2024-02-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,4,5.0,61.2,2024-02-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,3,4.5,57.7,2024-02-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,3,3.8,53.3,2024-02-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,2,4.2,55.0,2024-02-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,2,4.7,56.0,2024-02-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,4,5.1,59.1,2024-02-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,4,5.1,55.1,2024-02-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,3,4.6,57.2,2024-02-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,8,7.1,71.5,2024-03-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,6,7.7,65.3,2024-03-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,55,15.8,101.8,2024-03-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,49,16.7,102.4,2024-03-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,41,13.4,95.7,2024-03-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,60,13.2,99.6,2024-03-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,34,13.4,95.5,2024-03-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,40,11.9,92.7,2024-03-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,10,8.1,73.3,2024-03-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,26,14.3,86.6,2024-03-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,29,10.7,86.9,2024-03-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,42,12.9,93.2,2024-03-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,29,11.3,87.7,2024-03-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,51,18.0,105.9,2024-03-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,6,10.2,79.6,2024-03-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,32,12.3,92.7,2024-03-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,11,9.8,71.4,2024-03-01,Berpotensi Stunting
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,10,7.8,75.3,2024-03-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,8,8.6,68.1,2024-03-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,5,5.3,63.0,2024-03-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,4,4.9,59.1,2024-03-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,4,4.0,54.4,2024-03-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,3,4.4,56.6,2024-03-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,3,5.0,57.8,2024-03-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,5,5.4,60.2,2024-03-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,5,5.4,56.5,2024-03-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,4,5.0,58.2,2024-03-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,56,15.9,102.1,2024-04-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,50,16.9,102.8,2024-04-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,42,13.6,96.1,2024-04-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,61,13.3,100.0,2024-04-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,35,13.7,96.1,2024-04-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,41,12.1,92.9,2024-04-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,11,8.5,74.4,2024-04-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,27,14.6,87.1,2024-04-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,30,10.8,87.6,2024-04-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,43,13.0,93.6,2024-04-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,30,11.4,88.3,2024-04-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,52,18.2,106.2,2024-04-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,7,10.5,81.3,2024-04-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,33,12.5,93.3,2024-04-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,12,10.0,72.6,2024-04-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,11,8.2,77.1,2024-04-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,9,8.8,69.5,2024-04-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,6,5.5,64.9,2024-04-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,5,5.3,60.5,2024-04-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,5,4.3,55.7,2024-04-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,4,4.8,58.3,2024-04-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,4,5.3,59.5,2024-04-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,6,5.6,62.2,2024-04-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,6,5.8,58.3,2024-04-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,5,5.5,60.2,2024-04-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,3,4.5,60.0,2024-05-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,2,4.1,56.1,2024-05-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,2,3.5,52.0,2024-05-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,1,3.7,53.0,2024-05-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,57,16.1,102.4,2024-05-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,51,17.0,103.3,2024-05-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,43,13.7,96.5,2024-05-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,62,13.5,100.5,2024-05-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,36,13.9,96.9,2024-05-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,42,12.2,93.3,2024-05-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,12,8.8,76.1,2024-05-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,28,14.8,87.6,2024-05-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,31,10.9,88.2,2024-05-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,44,13.2,93.8,2024-05-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,31,11.6,88.9,2024-05-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,53,18.3,106.7,2024-05-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,8,10.8,82.5,2024-05-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,34,12.7,94.2,2024-05-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,13,10.2,73.2,2024-05-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,12,8.7,78.3,2024-05-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,10,9.1,70.8,2024-05-01,Stunting
+43,Sella Zevania,27/02/2024,Perempuan,7,5.8,66.0,2024-05-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,6,5.6,62.1,2024-05-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,6,4.7,57.6,2024-05-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,5,5.0,60.0,2024-05-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,5,5.6,60.5,2024-05-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,7,6.0,63.5,2024-05-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,7,6.3,59.9,2024-05-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,6,6.0,61.5,2024-05-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,58,16.3,102.8,2024-06-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,52,17.2,103.7,2024-06-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,44,13.9,97.0,2024-06-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,63,13.7,100.9,2024-06-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,37,14.1,97.3,2024-06-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,43,12.4,93.6,2024-06-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,13,8.9,76.9,2024-06-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,29,15.1,88.3,2024-06-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,32,11.1,88.8,2024-06-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,45,13.4,94.3,2024-06-01,Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,32,11.8,89.6,2024-06-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,54,18.4,107.1,2024-06-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,9,11.1,84.4,2024-06-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,35,13.0,95.1,2024-06-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,14,10.4,73.7,2024-06-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,13,9.0,78.9,2024-06-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,11,9.3,72.2,2024-06-01,Stunting
+43,Sella Zevania,27/02/2024,Perempuan,8,6.0,67.7,2024-06-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,7,5.9,63.4,2024-06-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,7,5.1,59.5,2024-06-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,6,5.2,61.4,2024-06-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,6,6.1,61.5,2024-06-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,8,6.5,65.4,2024-06-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,8,6.5,61.7,2024-06-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,7,6.3,63.0,2024-06-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,1,4.3,55.0,2024-07-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,59,16.4,103.1,2024-07-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,53,17.3,104.1,2024-07-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,45,14.0,97.5,2024-07-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,64,13.8,101.2,2024-07-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,38,14.3,97.7,2024-07-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,44,12.5,94.1,2024-07-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,14,9.2,77.7,2024-07-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,30,15.4,89.1,2024-07-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,33,11.3,89.8,2024-07-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,46,13.5,94.8,2024-07-01,Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,33,12.0,90.4,2024-07-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,55,18.5,107.4,2024-07-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,10,11.5,85.8,2024-07-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,36,13.1,96.1,2024-07-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,15,10.6,74.4,2024-07-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,14,9.3,79.7,2024-07-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,12,9.6,73.8,2024-07-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,9,6.4,69.5,2024-07-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,8,6.4,64.8,2024-07-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,8,5.6,60.9,2024-07-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,7,5.6,63.2,2024-07-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,7,6.5,63.1,2024-07-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,9,6.7,67.3,2024-07-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,9,6.9,63.3,2024-07-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,8,6.5,64.5,2024-07-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,3,4.6,57.5,2024-09-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,3,4.8,54.0,2024-10-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,60,16.6,103.4,2024-08-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,54,17.4,104.6,2024-08-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,46,14.1,97.9,2024-08-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,65,14.0,101.5,2024-08-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,39,14.4,98.2,2024-08-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,45,12.6,94.4,2024-08-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,15,9.3,78.2,2024-08-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,31,15.6,89.9,2024-08-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,34,11.6,90.5,2024-08-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,47,13.6,95.2,2024-08-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,34,12.2,91.0,2024-08-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,56,18.7,107.9,2024-08-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,11,11.8,87.6,2024-08-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,37,13.3,96.6,2024-08-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,16,10.7,75.3,2024-08-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,15,9.6,80.3,2024-08-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,13,9.8,74.5,2024-08-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,10,6.9,70.7,2024-08-01,Stunting
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,9,6.7,65.9,2024-08-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,9,5.8,62.5,2024-08-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,8,6.0,65.0,2024-08-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,8,6.7,64.7,2024-08-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,10,7.0,69.3,2024-08-01,Stunting
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,10,7.1,65.2,2024-08-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,9,6.9,65.5,2024-08-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,61,16.8,103.7,2024-09-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,55,17.6,104.8,2024-09-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,47,14.2,98.3,2024-09-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,66,14.1,101.8,2024-09-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,40,14.6,98.5,2024-09-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,46,12.8,94.8,2024-09-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,16,9.5,78.8,2024-09-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,32,15.8,90.7,2024-09-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,35,11.8,91.4,2024-09-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,48,13.7,95.5,2024-09-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,35,12.5,92.0,2024-09-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,57,18.9,108.4,2024-09-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,12,12.2,89.5,2024-09-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,38,13.5,96.9,2024-09-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,17,10.9,75.9,2024-09-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,16,9.7,81.3,2024-09-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,14,10.0,75.3,2024-09-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,11,7.2,72.6,2024-09-01,Berpotensi Stunting
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,10,7.1,67.0,2024-09-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,10,6.1,63.5,2024-09-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,9,6.4,66.6,2024-09-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,9,7.0,65.8,2024-09-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,11,7.2,70.8,2024-09-01,Stunting
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,11,7.4,67.1,2024-09-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,10,7.3,66.7,2024-09-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,62,17.0,104.0,2024-10-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,56,17.8,105.3,2024-10-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,48,14.3,98.8,2024-10-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,67,14.2,102.2,2024-10-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,41,14.7,98.7,2024-10-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,47,13.0,95.2,2024-10-01,Berpotensi Stunting
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,17,9.7,79.4,2024-10-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,33,16.0,91.6,2024-10-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,36,12.1,92.3,2024-10-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,49,13.9,96.0,2024-10-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,36,12.7,92.6,2024-10-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,58,19.0,108.9,2024-10-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,13,12.5,90.1,2024-10-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,39,13.7,97.4,2024-10-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,18,11.0,76.8,2024-10-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,17,10.0,81.8,2024-10-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,15,10.2,76.1,2024-10-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,12,7.5,74.3,2024-10-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,11,7.5,68.8,2024-10-01,Stunting
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,11,6.3,65.0,2024-10-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,10,6.6,67.9,2024-10-01,Stunting
+47,Nabila Putri Calista,29/05/2024,Perempuan,10,7.2,67.2,2024-10-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,12,7.5,72.7,2024-10-01,Stunting
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,12,7.8,68.3,2024-10-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,11,7.7,68.5,2024-10-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,63,17.1,104.4,2024-11-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,57,18.0,105.7,2024-11-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,49,14.4,99.0,2024-11-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,68,14.4,102.4,2024-11-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,42,14.8,99.1,2024-11-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,48,13.1,95.4,2024-11-01,Berpotensi Stunting
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,18,10.0,80.2,2024-11-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,34,16.3,92.3,2024-11-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,37,12.2,92.6,2024-11-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,50,14.0,96.3,2024-11-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,37,12.8,93.0,2024-11-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,59,19.2,109.3,2024-11-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,14,12.6,91.1,2024-11-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,40,13.8,97.9,2024-11-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,19,11.1,77.6,2024-11-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,18,10.3,82.4,2024-11-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,16,10.4,76.6,2024-11-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,13,7.6,75.2,2024-11-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,12,7.9,70.0,2024-11-01,Stunting
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,12,6.7,66.8,2024-11-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,11,7.0,69.8,2024-11-01,Stunting
+47,Nabila Putri Calista,29/05/2024,Perempuan,11,7.6,69.0,2024-11-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,13,7.7,73.5,2024-11-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,13,8.1,69.0,2024-11-01,Berpotensi Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,12,8.0,69.8,2024-11-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,64,17.3,104.7,2024-12-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,58,18.1,106.0,2024-12-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,50,14.5,99.3,2024-12-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,69,14.5,102.7,2024-12-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,43,15.0,99.6,2024-12-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,49,13.2,95.9,2024-12-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,19,10.3,81.1,2024-12-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,35,16.5,93.1,2024-12-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,38,12.3,93.0,2024-12-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,51,14.2,96.5,2024-12-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,38,12.9,93.5,2024-12-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,60,19.4,109.5,2024-12-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,15,12.8,91.7,2024-12-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,41,14.0,98.2,2024-12-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,20,11.2,78.6,2024-12-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,19,10.5,83.3,2024-12-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,17,10.5,77.6,2024-12-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,14,7.8,75.8,2024-12-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,13,8.2,70.7,2024-12-01,Stunting
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,13,7.0,67.7,2024-12-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,12,7.4,71.1,2024-12-01,Stunting
+47,Nabila Putri Calista,29/05/2024,Perempuan,12,8.1,70.5,2024-12-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,14,7.9,74.4,2024-12-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,14,8.3,69.7,2024-12-01,Berpotensi Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,13,8.2,70.3,2024-12-01,Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,2,4.3,56.0,2025-01-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,65,17.4,105.1,2025-01-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,59,18.2,106.4,2025-01-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,51,14.6,99.5,2025-01-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,70,14.6,103.2,2025-01-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,44,15.1,99.8,2025-01-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,50,13.3,96.2,2025-01-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,20,10.5,81.9,2025-01-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,36,16.7,93.9,2025-01-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,39,12.4,93.5,2025-01-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,52,14.4,96.8,2025-01-01,Berpotensi Stunting
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,39,13.0,93.9,2025-01-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,61,19.5,110.0,2025-01-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,16,12.9,92.4,2025-01-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,42,14.1,98.7,2025-01-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,21,11.5,79.4,2025-01-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,20,10.8,83.8,2025-01-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,18,10.7,78.1,2025-01-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,15,7.9,76.6,2025-01-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,14,8.5,71.5,2025-01-01,Stunting
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,14,7.3,68.5,2025-01-01,Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,13,7.5,71.6,2025-01-01,Stunting
+47,Nabila Putri Calista,29/05/2024,Perempuan,13,8.3,71.2,2025-01-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,15,8.1,75.1,2025-01-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,15,8.4,70.7,2025-01-01,Berpotensi Stunting
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,14,8.4,71.0,2025-01-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,66,17.6,105.3,2025-02-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,60,18.3,106.8,2025-02-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,52,14.8,99.7,2025-02-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,71,14.7,103.7,2025-02-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,45,15.2,100.2,2025-02-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,51,13.4,96.6,2025-02-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,21,10.7,82.8,2025-02-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,37,16.8,94.3,2025-02-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,40,12.6,93.9,2025-02-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,53,14.5,97.0,2025-02-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,40,13.1,94.1,2025-02-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,62,19.7,110.2,2025-02-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,17,13.1,93.0,2025-02-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,43,14.2,99.0,2025-02-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,22,11.8,80.1,2025-02-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,21,11.1,84.5,2025-02-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,19,10.8,78.6,2025-02-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,16,8.1,77.3,2025-02-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,15,8.7,72.2,2025-02-01,Stunting
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,15,7.5,69.1,2025-02-01,Berpotensi Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,14,7.8,72.3,2025-02-01,Stunting
+47,Nabila Putri Calista,29/05/2024,Perempuan,14,8.6,71.8,2025-02-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,16,8.3,75.6,2025-02-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,16,8.6,71.5,2025-02-01,Normal
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,15,8.5,71.5,2025-02-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,67,17.8,105.7,2025-03-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,61,18.4,107.2,2025-03-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,53,14.9,100.1,2025-03-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,72,14.9,104.1,2025-03-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,46,15.4,100.5,2025-03-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,52,13.6,97.0,2025-03-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,22,10.8,83.6,2025-03-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,38,16.9,94.5,2025-03-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,41,12.7,94.3,2025-03-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,54,14.6,97.5,2025-03-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,41,13.3,94.5,2025-03-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,63,19.9,110.6,2025-03-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,18,13.4,94.0,2025-03-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,44,14.3,99.4,2025-03-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,23,12.0,81.0,2025-03-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,22,11.4,85.1,2025-03-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,17,8.3,78.0,2025-03-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,16,8.8,72.8,2025-03-01,Stunting
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,16,7.7,70.0,2025-03-01,Berpotensi Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,15,8.0,73.1,2025-03-01,Stunting
+47,Nabila Putri Calista,29/05/2024,Perempuan,15,8.7,72.8,2025-03-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,17,8.4,76.4,2025-03-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,17,8.8,72.3,2025-03-01,Normal
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,16,8.6,72.2,2025-03-01,Stunting
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,20,10.9,79.3,2025-03-01,Normal
+7,Putri Nadya Silvana,01/10/2019,Perempuan,68,17.9,106.1,2025-04-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,62,18.5,107.7,2025-04-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,54,15.1,100.4,2025-04-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,73,15.1,104.4,2025-04-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,47,15.6,100.9,2025-04-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,53,13.7,97.5,2025-04-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,23,11.0,84.5,2025-04-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,39,17.0,94.9,2025-04-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,42,12.9,94.6,2025-04-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,55,14.7,97.9,2025-04-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,42,13.5,94.8,2025-04-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,64,20.1,110.9,2025-04-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,19,13.6,94.8,2025-04-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,45,14.4,99.8,2025-04-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,24,12.1,81.6,2025-04-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,23,11.7,85.6,2025-04-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,21,11.0,80.0,2025-04-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,18,8.6,78.7,2025-04-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,17,9.0,73.5,2025-04-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,17,8.0,70.5,2025-04-01,Berpotensi Stunting
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,16,8.1,74.0,2025-04-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,16,8.8,73.3,2025-04-01,Stunting
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,18,8.7,77.1,2025-04-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,18,8.9,73.2,2025-04-01,Normal
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,17,8.9,72.9,2025-04-01,Stunting
+7,Putri Nadya Silvana,01/10/2019,Perempuan,69,18.0,106.3,2025-05-01,Normal
+16,Cyra Tanisha Nara,11/02/2020,Perempuan,63,18.6,108.0,2025-05-01,Normal
+11,Kenzo Alvaro Yulian,15/10/2020,Laki-laki,55,15.2,100.7,2025-05-01,Normal
+1,Muhammad Habibie,22/09/2019,Laki-laki,74,15.3,104.7,2025-05-01,Normal
+19,Joenathan Ivander Kusuma,25/04/2021,Laki-laki,48,15.8,101.3,2025-05-01,Normal
+32,Devandra Maulana Zakki,20/11/2020,Laki-laki,54,13.8,97.8,2025-05-01,Normal
+33,Derren Tristyan Alfarizky,09/05/2023,Laki-laki,24,11.3,85.4,2025-05-01,Normal
+28,Edgar Ghazam Rajendra,30/01/2022,Laki-laki,40,17.1,95.2,2025-05-01,Normal
+34,Velisya Joanna Christanti,29/09/2021,Perempuan,43,13.1,94.9,2025-05-01,Normal
+35,Felicia Kinanti Azzahra,02/10/2020,Perempuan,56,14.9,98.4,2025-05-01,Normal
+36,Ahmad Zaidan Al Fatih,13/11/2021,Laki-laki,43,13.7,95.1,2025-05-01,Normal
+37,Grecia Nathania Frisca,17/01/2020,Perempuan,65,20.3,111.4,2025-05-01,Normal
+38,Milan Anggela Kristi,11/10/2023,Perempuan,20,13.8,95.7,2025-05-01,Normal
+39,Elvano Daniswara Daiki,04/08/2021,Laki-laki,46,14.5,100.2,2025-05-01,Normal
+40,Devano Aji Al Falfarizky,16/05/2023,Laki-laki,25,12.3,82.3,2025-05-01,Normal
+41,Arsyila Queenza Ayu Zea Elshanum,03/08/2023,Perempuan,24,12.0,86.6,2025-05-01,Normal
+42,Sezha Feodora Zahsy,02/09/2023,Perempuan,22,11.3,80.8,2025-05-01,Normal
+43,Sella Zevania,27/02/2024,Perempuan,19,8.7,79.2,2025-05-01,Normal
+44,Arsyila Adinda Ramadania,16/03/2024,Perempuan,18,9.2,74.3,2025-05-01,Normal
+45,Abid Dilnawas Alfarizki Wicaksono,18/03/2024,Laki-laki,18,8.2,71.2,2025-05-01,Normal
+46,Sena Humaira Aviaji,04/11/2024,Perempuan,17,8.2,75.0,2025-05-01,Normal
+47,Nabila Putri Calista,29/05/2024,Perempuan,17,9.1,74.2,2025-05-01,Normal
+48,Kanaya Zunaira Mafaza,18/06/2024,Perempuan,19,8.9,78.1,2025-05-01,Normal
+49,Muh. Davindra Rizky Pratama,29/07/2024,Laki-laki,19,9.0,73.7,2025-05-01,Normal
+50,Maisya Salsabila Fadila,07/11/2024,Perempuan,18,9.0,73.8,2025-05-01,Normal
