@@ -27,9 +27,41 @@ const formatAge = (value) => {
 };
 const csvCell = (value) => `"${String(value ?? '').replace(/"/g, '""')}"`;
 
+const loadStylesheet = (id, href) => {
+  if (document.getElementById(id)) return;
+  const link = document.createElement('link');
+  link.id = id;
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
+};
+
+const loadScript = (id, src) => new Promise((resolve, reject) => {
+  const existing = document.getElementById(id);
+  if (existing) {
+    if (existing.dataset.loaded === 'true') resolve();
+    else {
+      existing.addEventListener('load', resolve, { once: true });
+      existing.addEventListener('error', reject, { once: true });
+    }
+    return;
+  }
+  const script = document.createElement('script');
+  script.id = id;
+  script.src = src;
+  script.defer = true;
+  script.addEventListener('load', () => {
+    script.dataset.loaded = 'true';
+    resolve();
+  }, { once: true });
+  script.addEventListener('error', reject, { once: true });
+  document.head.appendChild(script);
+});
+
 const ReportPage = {
   _data: [],
   _filtered: [],
+  _select2Ready: false,
 
   async render() {
     if (!localStorage.getItem('token')) {
@@ -51,64 +83,69 @@ const ReportPage = {
           </div>
         </div>
 
-        <section class="report-filter-panel" aria-label="Filter laporan">
-          <div class="report-filter-grid">
-            <label class="report-filter-field report-filter-search">
-              <span>Cari data</span>
-              <div class="report-search-control">
-                <span aria-hidden="true">⌕</span>
-                <input type="search" id="searchInput" placeholder="Nama, ID, orang tua, alamat, status, catatan..." autocomplete="off" />
-                <button id="clearSearch" class="report-search-clear" type="button" hidden aria-label="Hapus pencarian">×</button>
-              </div>
-            </label>
-
-            <label class="report-filter-field">
-              <span>Anak</span>
-              <select id="childFilter">
-                <option value="">Semua anak</option>
-              </select>
-            </label>
-
-            <label class="report-filter-field">
-              <span>Periode</span>
-              <select id="periodFilter">
-                <option value="all">Semua waktu</option>
-                <option value="1">1 bulan terakhir</option>
-                <option value="3">3 bulan terakhir</option>
-                <option value="6">6 bulan terakhir</option>
-                <option value="12">1 tahun terakhir</option>
-                <option value="year">Tahun tertentu</option>
-                <option value="range">Rentang tanggal</option>
-              </select>
-            </label>
-
-            <label class="report-filter-field">
-              <span>Status</span>
-              <select id="statusFilter">
-                <option value="">Semua status</option>
-              </select>
-            </label>
-
-            <label class="report-filter-field report-conditional" id="yearField" hidden>
-              <span>Tahun</span>
-              <select id="yearFilter"></select>
-            </label>
-
-            <label class="report-filter-field report-conditional" id="startDateField" hidden>
-              <span>Dari tanggal</span>
-              <input type="date" id="startDate" />
-            </label>
-
-            <label class="report-filter-field report-conditional" id="endDateField" hidden>
-              <span>Sampai tanggal</span>
-              <input type="date" id="endDate" />
-            </label>
+        <section class="report-tools" aria-label="Pencarian dan filter laporan">
+          <div class="report-search-toolbar">
+            <div class="report-search-control">
+              <span class="report-search-icon" aria-hidden="true">⌕</span>
+              <input type="search" id="searchInput" aria-label="Cari data pemeriksaan" placeholder="Cari nama, ID, orang tua, alamat, status, catatan..." autocomplete="off" />
+              <button id="clearSearch" class="report-search-clear" type="button" hidden aria-label="Hapus pencarian">×</button>
+            </div>
+            <button id="filterToggle" class="btn-secondary report-filter-toggle" type="button" aria-expanded="false" aria-controls="filterPanel">
+              <span aria-hidden="true">☰</span> Filter
+            </button>
           </div>
 
-          <div class="report-filter-footer">
-            <div id="reportCount" class="report-result-count" aria-live="polite">Memuat data...</div>
-            <button id="resetFilters" class="btn-secondary" type="button">Reset Filter</button>
+          <div id="filterPanel" class="report-filter-panel" hidden>
+            <div class="report-filter-grid">
+              <label class="report-filter-field">
+                <span>Anak</span>
+                <select id="childFilter" class="report-select2" data-placeholder="Semua anak">
+                  <option value="">Semua anak</option>
+                </select>
+              </label>
+
+              <label class="report-filter-field">
+                <span>Periode</span>
+                <select id="periodFilter" class="report-select2" data-placeholder="Semua waktu">
+                  <option value="all">Semua waktu</option>
+                  <option value="1">1 bulan terakhir</option>
+                  <option value="3">3 bulan terakhir</option>
+                  <option value="6">6 bulan terakhir</option>
+                  <option value="12">1 tahun terakhir</option>
+                  <option value="year">Tahun tertentu</option>
+                  <option value="range">Rentang tanggal</option>
+                </select>
+              </label>
+
+              <label class="report-filter-field">
+                <span>Status</span>
+                <select id="statusFilter" class="report-select2" data-placeholder="Semua status">
+                  <option value="">Semua status</option>
+                </select>
+              </label>
+
+              <label class="report-filter-field report-conditional" id="yearField" hidden>
+                <span>Tahun</span>
+                <select id="yearFilter" class="report-select2"></select>
+              </label>
+
+              <label class="report-filter-field report-conditional" id="startDateField" hidden>
+                <span>Dari tanggal</span>
+                <input type="date" id="startDate" />
+              </label>
+
+              <label class="report-filter-field report-conditional" id="endDateField" hidden>
+                <span>Sampai tanggal</span>
+                <input type="date" id="endDate" />
+              </label>
+            </div>
+
+            <div class="report-filter-footer">
+              <button id="resetFilters" class="btn-secondary" type="button">Reset Filter</button>
+            </div>
           </div>
+
+          <div id="reportCount" class="report-result-count" aria-live="polite">Memuat data...</div>
         </section>
 
         <div class="table-container responsive-table-wrap">
@@ -135,12 +172,44 @@ const ReportPage = {
     try {
       this._data = await getReportHistory(token);
       this._populateFilterOptions();
+      await this._ensureSelect2();
+      this._initSelect2();
       this._bindFilters();
       this._applyFilters();
     } catch (error) {
       count.textContent = 'Gagal memuat data';
       tbody.innerHTML = `<tr class="table-state table-error"><td colspan="10"><strong>Laporan gagal dimuat</strong><span>${escapeHtml(error.message || 'Silakan coba lagi beberapa saat.')}</span></td></tr>`;
     }
+  },
+
+  async _ensureSelect2() {
+    if (window.jQuery?.fn?.select2) {
+      this._select2Ready = true;
+      return;
+    }
+
+    loadStylesheet('nurtura-select2-css', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css');
+    if (!window.jQuery) {
+      await loadScript('nurtura-jquery', 'https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js');
+    }
+    if (!window.jQuery.fn.select2) {
+      await loadScript('nurtura-select2-js', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js');
+    }
+    this._select2Ready = Boolean(window.jQuery?.fn?.select2);
+  },
+
+  _initSelect2() {
+    if (!this._select2Ready) return;
+    const $ = window.jQuery;
+    $('.report-select2').each(function initReportSelect2() {
+      const $select = $(this);
+      if ($select.hasClass('select2-hidden-accessible')) return;
+      $select.select2({
+        width: '100%',
+        minimumResultsForSearch: this.id === 'childFilter' ? 0 : Infinity,
+        placeholder: this.dataset.placeholder || undefined,
+      });
+    });
   },
 
   _populateFilterOptions() {
@@ -195,6 +264,7 @@ const ReportPage = {
       element?.addEventListener(id === 'searchInput' ? 'input' : 'change', () => this._applyFilters());
     });
 
+    document.getElementById('filterToggle')?.addEventListener('click', () => this._toggleFilterPanel());
     document.getElementById('periodFilter')?.addEventListener('change', () => this._syncConditionalFilters());
     document.getElementById('clearSearch')?.addEventListener('click', () => {
       const input = document.getElementById('searchInput');
@@ -205,6 +275,15 @@ const ReportPage = {
     document.getElementById('resetFilters')?.addEventListener('click', () => this._resetFilters());
     document.getElementById('exportCsv')?.addEventListener('click', () => this._exportCsv());
     document.getElementById('exportPdf')?.addEventListener('click', () => this._exportPdf());
+  },
+
+  _toggleFilterPanel(forceOpen) {
+    const panel = document.getElementById('filterPanel');
+    const button = document.getElementById('filterToggle');
+    const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : panel.hidden;
+    panel.hidden = !shouldOpen;
+    button.setAttribute('aria-expanded', String(shouldOpen));
+    button.classList.toggle('is-active', shouldOpen);
   },
 
   _syncConditionalFilters() {
@@ -291,11 +370,20 @@ const ReportPage = {
       </tr>`).join('');
   },
 
+  _setSelectValue(id, value) {
+    const element = document.getElementById(id);
+    if (!element) return;
+    element.value = value;
+    if (this._select2Ready && window.jQuery(element).hasClass('select2-hidden-accessible')) {
+      window.jQuery(element).trigger('change.select2');
+    }
+  },
+
   _resetFilters() {
     document.getElementById('searchInput').value = '';
-    document.getElementById('childFilter').value = '';
-    document.getElementById('periodFilter').value = 'all';
-    document.getElementById('statusFilter').value = '';
+    this._setSelectValue('childFilter', '');
+    this._setSelectValue('periodFilter', 'all');
+    this._setSelectValue('statusFilter', '');
     document.getElementById('startDate').value = '';
     document.getElementById('endDate').value = '';
     this._applyFilters();
