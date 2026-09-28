@@ -70,7 +70,6 @@ const DetailAnakPage = {
         <div class="detail-top-actions">
           <span class="status ${statusClass(currentStatus)}">${esc(currentStatus)}</span>
           <button id="editIdentityButton" class="btn-secondary" type="button">Edit Identitas</button>
-          <button id="addCheckupButton" class="btn-primary" type="button">+ Tambah Pemeriksaan</button>
         </div>
       </div>
 
@@ -101,7 +100,14 @@ const DetailAnakPage = {
       </section>
 
       <section class="history-section">
-        <div class="section-heading-row"><div><span class="eyebrow">Riwayat anak</span><h2>Riwayat pemeriksaan</h2></div><small>${history.length} pemeriksaan tersimpan</small></div>
+        <div class="section-heading-row">
+          <div>
+            <span class="eyebrow">Riwayat anak</span>
+            <h2>Riwayat pemeriksaan</h2>
+            <small>${history.length} pemeriksaan tersimpan</small>
+          </div>
+          <button id="addCheckupButton" class="btn-primary" type="button">+ Tambah Pemeriksaan</button>
+        </div>
         <div class="history-table-wrap">
           <table class="history-table">
             <thead><tr><th>Tanggal</th><th>Umur</th><th>Tinggi</th><th>Berat</th><th>Lingkar kepala</th><th>Status</th><th>Catatan</th></tr></thead>
