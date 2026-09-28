@@ -1,9 +1,21 @@
 const pool = require('../config/database');
 
+// Deployment lama mungkin belum memiliki field profil terbaru.
+// Pastikan schema minimum tersedia sebelum endpoint profil membaca/menulis data.
+const ensureProfileSchema = async () => {
+  await pool.query(`
+    ALTER TABLE posyandu_profile
+    ADD COLUMN IF NOT EXISTS desa_kelurahan VARCHAR(150),
+    ADD COLUMN IF NOT EXISTS foto_url TEXT,
+    ADD COLUMN IF NOT EXISTS deskripsi TEXT;
+  `);
+};
+
 // GET - Ambil profil posyandu user yang login
 const getProfile = async (req, res) => {
   try {
     const userId = req.user.userId;
+    await ensureProfileSchema();
 
     const result = await pool.query(
       `SELECT p.*, a.username
@@ -35,6 +47,7 @@ const createProfile = async (req, res) => {
   try {
     const userId = req.user.userId;
     const { nama_posyandu, alamat, desa_kelurahan, foto_url, deskripsi } = req.body;
+    await ensureProfileSchema();
 
     const existing = await pool.query(
       'SELECT * FROM posyandu_profile WHERE user_id = $1',
@@ -44,13 +57,21 @@ const createProfile = async (req, res) => {
       return res.status(400).json({ message: 'Profil sudah ada, gunakan PUT untuk update' });
     }
 
-    await pool.query(
+    const result = await pool.query(
       `INSERT INTO posyandu_profile (user_id, nama_posyandu, alamat, desa_kelurahan, foto_url, deskripsi)
-       VALUES ($1, $2, $3, $4, $5, $6)`,
-      [userId, nama_posyandu, alamat, desa_kelurahan || null, foto_url, deskripsi]
+       VALUES ($1, $2, $3, $4, $5, $6)
+       RETURNING *`,
+      [
+        userId,
+        nama_posyandu,
+        alamat,
+        desa_kelurahan?.trim() || null,
+        foto_url || null,
+        deskripsi || null,
+      ]
     );
 
-    res.status(201).json({ message: '✅ Profil berhasil dibuat' });
+    res.status(201).json({ message: '✅ Profil berhasil dibuat', data: result.rows[0] });
   } catch (err) {
     console.error('❌ Error createProfile:', err.message);
     res.status(500).json({ message: 'Gagal membuat profil' });
@@ -62,19 +83,32 @@ const updateProfile = async (req, res) => {
   try {
     const userId = req.user.userId;
     const { nama_posyandu, alamat, desa_kelurahan, foto_url, deskripsi } = req.body;
+    await ensureProfileSchema();
 
-    await pool.query(
+    const result = await pool.query(
       `UPDATE posyandu_profile
        SET nama_posyandu = $1,
            alamat = $2,
            desa_kelurahan = $3,
            foto_url = $4,
            deskripsi = $5
-       WHERE user_id = $6`,
-      [nama_posyandu, alamat, desa_kelurahan || null, foto_url, deskripsi, userId]
+       WHERE user_id = $6
+       RETURNING *`,
+      [
+        nama_posyandu,
+        alamat,
+        desa_kelurahan?.trim() || null,
+        foto_url || null,
+        deskripsi || null,
+        userId,
+      ]
     );
 
-    res.json({ message: '✅ Profil berhasil diperbarui' });
+    if (result.rowCount === 0) {
+      return res.status(404).json({ message: 'Profil Posyandu tidak ditemukan' });
+    }
+
+    res.json({ message: '✅ Profil berhasil diperbarui', data: result.rows[0] });
   } catch (err) {
     console.error('❌ Error updateProfile:', err.message);
     res.status(500).json({ message: 'Gagal mengupdate profil' });
