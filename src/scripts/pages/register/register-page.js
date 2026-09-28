@@ -17,9 +17,10 @@ const RegisterPage = {
         <main class="auth-form-panel">
           <div class="auth-form-wrap">
             ${StepIndicator.render(1)}
-            <div class="auth-form-heading"><span class="auth-kicker">Buat akun</span><h2>Registrasi NURTURA</h2><p>Gunakan username yang mudah diingat dan password minimal 6 karakter.</p></div>
+            <div class="auth-form-heading"><span class="auth-kicker">Buat akun</span><h2>Registrasi NURTURA</h2><p>Nama Posyandu digunakan sebagai identitas fasilitas. Username digunakan khusus untuk masuk ke akun.</p></div>
             <form id="registerForm" class="auth-form-card" novalidate>
-              <label class="auth-field" for="username"><span>Username</span><input id="username" name="username" type="text" autocomplete="username" placeholder="Contoh: posyandumelati" required /></label>
+              <label class="auth-field" for="namaPosyandu"><span>Nama Posyandu</span><input id="namaPosyandu" name="namaPosyandu" type="text" autocomplete="organization" maxlength="100" placeholder="Contoh: Posyandu Melati" required /></label>
+              <label class="auth-field" for="username"><span>Username</span><input id="username" name="username" type="text" autocomplete="username" maxlength="100" placeholder="Contoh: posyandumelati" required /><small>Username ini yang digunakan saat login.</small></label>
               <label class="auth-field" for="password"><span>Password</span><div class="password-wrapper"><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Minimal 6 karakter" required /><button class="toggle-password" type="button" data-target="password" aria-label="Tampilkan password">${eyeIcon}</button></div></label>
               <label class="auth-field" for="confirmPassword"><span>Konfirmasi password</span><div class="password-wrapper"><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Ulangi password" required /><button class="toggle-password" type="button" data-target="confirmPassword" aria-label="Tampilkan password">${eyeIcon}</button></div></label>
               <p id="registerError" class="auth-message" role="alert" aria-live="polite"></p>
@@ -46,15 +47,17 @@ const RegisterPage = {
     const submitBtn = document.getElementById("submitBtn");
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
+      const namaPosyandu = form.namaPosyandu.value.trim();
       const username = form.username.value.trim();
       const password = form.password.value.trim();
       const confirmPassword = form.confirmPassword.value.trim();
       this.showError("");
-      if (!username || !password || !confirmPassword) { this.showError("Semua field wajib diisi."); return; }
+      if (!namaPosyandu || !username || !password || !confirmPassword) { this.showError("Semua field wajib diisi."); return; }
+      if (!/^[a-zA-Z0-9._-]{3,100}$/.test(username)) { this.showError("Username minimal 3 karakter dan hanya boleh berisi huruf, angka, titik, garis bawah, atau tanda minus."); return; }
       if (password.length < 6) { this.showError("Password minimal 6 karakter."); return; }
       if (password !== confirmPassword) { this.showError("Password dan konfirmasi password tidak sama."); return; }
       submitBtn.disabled = true; submitBtn.querySelector("span").textContent = "Mendaftarkan...";
-      await this.presenter.handleRegister(username, password);
+      await this.presenter.handleRegister({ namaPosyandu, username, password });
       submitBtn.disabled = false; submitBtn.querySelector("span").textContent = "Buat akun";
     });
   },
