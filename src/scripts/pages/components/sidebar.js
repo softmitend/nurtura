@@ -6,7 +6,6 @@ const icon = (name) => {
     children: '<circle cx="9" cy="8" r="4"/><path d="M2.5 21a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="3"/><path d="M16 15.5c3.2-.7 5.5 1.2 5.5 4.5"/>',
     profile: '<path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/><circle cx="12" cy="7" r="4"/>',
     report: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
-    history: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/>',
     logout: '<path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h4a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-4"/>',
   };
   return `<svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
@@ -27,7 +26,6 @@ const Sidebar = {
         <ul class="nav-links">
           ${item("#/dashboard", "Dashboard", "dashboard")}
           ${item("#/anak", "Data Anak", "children")}
-          ${item("#/riwayat", "Riwayat", "history")}
           ${item("#/report", "Laporan", "report")}
           <li class="nav-divider" aria-hidden="true"></li>
           ${item("#/profile-posyandu", "Profil Posyandu", "profile")}
