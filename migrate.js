@@ -184,7 +184,8 @@ async function migrate({ closePool = true } = {}) {
     await pool.query(`
       ALTER TABLE posyandu_profile
       ADD COLUMN IF NOT EXISTS foto_url TEXT,
-      ADD COLUMN IF NOT EXISTS deskripsi TEXT;
+      ADD COLUMN IF NOT EXISTS deskripsi TEXT,
+      ADD COLUMN IF NOT EXISTS desa_kelurahan VARCHAR(150);
     `);
 
     await pool.query(`
