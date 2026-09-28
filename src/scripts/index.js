@@ -2,6 +2,7 @@ import "../styles/styles.css";
 import "../styles/modern-ui.css";
 import "../styles/sidebar.css";
 import "../styles/nurtura-theme.css";
+import "../styles/detail-history-button.css";
 
 import App from "./pages/app.js";
 
