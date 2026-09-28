@@ -27,8 +27,7 @@ const DetailAnakPage = {
     const container = document.getElementById("detailContainer");
 
     if (!anakId) {
-      container.innerHTML = `<div class="detail-state"><strong>Data anak belum dipilih</strong><p>Kembali ke daftar anak lalu pilih data yang ingin dilihat.</p><button class="btn-back" id="backButton">Kembali ke Data Anak</button></div>`;
-      document.getElementById("backButton")?.addEventListener("click", () => { window.location.hash = "/anak"; });
+      container.innerHTML = `<div class="detail-state"><strong>Data anak belum dipilih</strong><p>Pilih anak melalui menu Data Anak di sidebar untuk melihat detailnya.</p></div>`;
       return;
     }
 
@@ -41,8 +40,7 @@ const DetailAnakPage = {
       this._renderDetail(container, child, history, latest);
       this._bindActions({ token, anakId, child });
     } catch (error) {
-      container.innerHTML = `<div class="detail-state error-state"><strong>Data gagal dimuat</strong><p>${esc(error.message || "Terjadi kesalahan saat mengambil data anak.")}</p><div><button class="btn-back" id="backButton">Kembali</button><button class="btn-warning" id="retryButton">Coba lagi</button></div></div>`;
-      document.getElementById("backButton")?.addEventListener("click", () => { window.location.hash = "/anak"; });
+      container.innerHTML = `<div class="detail-state error-state"><strong>Data gagal dimuat</strong><p>${esc(error.message || "Terjadi kesalahan saat mengambil data anak.")}</p><div><button class="btn-warning" id="retryButton">Coba lagi</button></div></div>`;
       document.getElementById("retryButton")?.addEventListener("click", () => this.afterRender());
     }
   },
@@ -112,11 +110,8 @@ const DetailAnakPage = {
         </div>
       </section>
 
-      <div class="detail-actions"><button id="backButton" class="btn-back" type="button">← Kembali ke Data Anak</button><button id="hapusButton" class="btn-hapus" type="button">Hapus Anak</button></div>
-
       ${this._identityDialog(child)}
-      ${this._checkupDialog(child)}
-      <dialog id="deleteDialog" class="confirm-dialog" aria-labelledby="deleteTitle"><div class="confirm-dialog-body"><span class="confirm-icon" aria-hidden="true">!</span><div><h2 id="deleteTitle">Hapus data ${esc(child.nama)}?</h2><p>Identitas anak dan seluruh riwayat pemeriksaannya akan ikut terhapus dan tidak dapat dikembalikan.</p><p id="deleteMessage" class="dialog-message" role="alert" aria-live="polite"></p></div></div><div class="confirm-dialog-actions"><button id="cancelDelete" class="btn-back" type="button">Batal</button><button id="confirmDelete" class="btn-hapus" type="button">Ya, hapus anak</button></div></dialog>`;
+      ${this._checkupDialog(child)}`;
   },
 
   _identityDialog(child) {
@@ -182,7 +177,6 @@ const DetailAnakPage = {
     const identityBirth = document.querySelector('#identityForm input[name="tanggal_lahir"]');
     if (identityBirth) identityBirth.max = today;
 
-    document.getElementById("backButton")?.addEventListener("click", () => { window.location.hash = "/anak"; });
     document.getElementById("editIdentityButton")?.addEventListener("click", () => openDialog("identityDialog"));
     document.getElementById("addCheckupButton")?.addEventListener("click", () => openDialog("checkupDialog"));
     document.getElementById("addCheckupEmptyButton")?.addEventListener("click", () => openDialog("checkupDialog"));
@@ -243,25 +237,6 @@ const DetailAnakPage = {
       } catch (error) {
         message.textContent = error.message || "Pemeriksaan gagal disimpan.";
         setFormLoading(form, button, false, "Menyimpan pemeriksaan...", "Simpan Pemeriksaan");
-      }
-    });
-
-    document.getElementById("hapusButton")?.addEventListener("click", () => openDialog("deleteDialog"));
-    document.getElementById("cancelDelete")?.addEventListener("click", () => closeDialog("deleteDialog"));
-    document.getElementById("confirmDelete")?.addEventListener("click", async () => {
-      const button = document.getElementById("confirmDelete");
-      const message = document.getElementById("deleteMessage");
-      button.disabled = true;
-      button.textContent = "Menghapus...";
-      message.textContent = "";
-      try {
-        await DetailAnakPresenter.hapusAnak(token, anakId);
-        closeDialog("deleteDialog");
-        window.location.hash = "/anak";
-      } catch (error) {
-        message.textContent = error.message || "Data anak gagal dihapus.";
-        button.disabled = false;
-        button.textContent = "Ya, hapus anak";
       }
     });
   },
